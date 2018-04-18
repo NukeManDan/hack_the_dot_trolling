@@ -10,4 +10,5 @@ get the python BE going:
 ```bash
 pip install requests
 sudo easy_install Flask
+pip install flask-socketio
 ```
