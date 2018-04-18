@@ -1,3 +1,5 @@
+import sys
+import os
 from flask import *
 from flask_socketio import SocketIO, emit
 
@@ -5,7 +7,7 @@ app = Flask(__name__, static_folder='static')
 app.config['SECRET_KEY'] = 'secret!'
 socketio = SocketIO(app)
 
-@app.rout('/', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def index():
     return render_template('index.html')
     
